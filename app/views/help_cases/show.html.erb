@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @help_case.title %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @help_case.user %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @help_case.description %>
+</p>
+
+<%= link_to 'Edit', edit_help_case_path(@help_case) %> |
+<%= link_to 'Back', help_cases_path %>

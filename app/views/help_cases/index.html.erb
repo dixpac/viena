@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<h3>Listing Help Cases</h3>
+<%= link_to "Ask for help?", new_help_case_path, class: "success button" %>
+
+<br>
+
+<% @help_cases.each do |help_case| %>
+  <div class="callout">
+    <h5><%= help_case.title %></h5> 
+    <p><%= help_case.title %></h5> 
+  </div>
+<% end %>
+
+<br>
+
